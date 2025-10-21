@@ -2,11 +2,8 @@ from flask import Flask, request, render_template, redirect, url_for, session
 from werkzeug.security import generate_password_hash, check_password_hash
 
 app = Flask(__name__)
-app.secret_key = (
-    "troque_essa_chave_por_uma_variavel_ambiente"  # em produção use ENV var
-)
+app.secret_key = "troque_essa_chave_por_uma_variavel_ambiente"
 
-# Banco simples em memória só para teste
 usuarios = {"teste": generate_password_hash("1234")}
 
 

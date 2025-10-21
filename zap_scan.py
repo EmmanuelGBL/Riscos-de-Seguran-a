@@ -1,8 +1,7 @@
-# zap_scan.py
 from zapv2 import ZAPv2
 import time
 
-target = "http://127.0.0.1:5000"  # ajuste se seu app rodar em outro lugar
+target = "http://127.0.0.1:5000"
 zap = ZAPv2(
     apikey="",
     proxies={"http": "http://127.0.0.1:8080", "https": "http://127.0.0.1:8080"},

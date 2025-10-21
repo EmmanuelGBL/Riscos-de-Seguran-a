@@ -1,4 +1,3 @@
-# simple_code_checker.py
 import re
 import sys
 from pathlib import Path
